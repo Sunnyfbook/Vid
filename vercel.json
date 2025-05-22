@@ -2,11 +2,11 @@
   "version": 2,
   "functions": {
     "api/webhook.py": {
-      "runtime": "python3.9",
+      "runtime": "python3.11",
       "maxDuration": 30
     },
     "index.py": {
-      "runtime": "python3.9",
+      "runtime": "python3.11",
       "maxDuration": 30
     }
   },
