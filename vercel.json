@@ -1,26 +1,32 @@
 {
   "version": 2,
   "functions": {
-    "app.py": {
-      "runtime": "python3.9"
-    },
     "api/webhook.py": {
-      "runtime": "python3.9"
+      "runtime": "python3.9",
+      "maxDuration": 30
+    },
+    "index.py": {
+      "runtime": "python3.9",
+      "maxDuration": 30
     }
   },
   "routes": [
     {
       "src": "/api/webhook",
+      "dest": "/api/webhook.py",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/api/video/(.*)",
+      "dest": "/api/webhook.py"
+    },
+    {
+      "src": "/api/videos",
       "dest": "/api/webhook.py"
     },
     {
       "src": "/(.*)",
-      "dest": "/app.py"
+      "dest": "/index.py"
     }
-  ],
-  "env": {
-    "BOT_TOKEN": "@bot_token",
-    "CHANNEL_ID": "@channel_id",
-    "WEBAPP_BASE_URL": "@webapp_base_url"
-  }
+  ]
 }
