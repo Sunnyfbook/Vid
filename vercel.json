@@ -2,11 +2,11 @@
   "version": 2,
   "functions": {
     "api/webhook.py": {
-      "runtime": "@vercel/python@3.9", // Use the official runtime package
+      "runtime": "@vercel/python", // No version suffix here
       "maxDuration": 30
     },
     "index.py": {
-      "runtime": "@vercel/python@3.9", // Use the official runtime package
+      "runtime": "@vercel/python", // No version suffix here
       "maxDuration": 30
     }
   },
