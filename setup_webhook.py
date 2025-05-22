@@ -2,8 +2,8 @@ import requests
 import os
 
 # Configuration - Replace with your actual values
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
-WEBHOOK_URL = "https://your-app-name.vercel.app/api/webhook"
+BOT_TOKEN = "8117558252:AAF0IvXWsNQuf4Qc9lUKOgKwll5zJp0-BKE"
+WEBHOOK_URL = "https://vid-one-lilac.vercel.app/api/webhook"
 
 def set_webhook():
     """Set webhook for the Telegram bot"""
