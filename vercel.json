@@ -2,11 +2,11 @@
   "version": 2,
   "functions": {
     "api/webhook.py": {
-      "runtime": "vercel-php@0.6.0",
+      "runtime": "python3.9",
       "maxDuration": 30
     },
     "index.py": {
-      "runtime": "vercel-php@0.6.0",
+      "runtime": "python3.9",
       "maxDuration": 30
     }
   },
